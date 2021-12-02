@@ -11,6 +11,7 @@ namespace Ебаный_крестикнолик
         Board board = new Board();
         public  void Run()
         {
+            board.DrawBoard(board);
             Console.WriteLine("Use numpad to choose ur cell");
             for (int i = 0; i < 9; i++)
             {
@@ -21,6 +22,8 @@ namespace Ебаный_крестикнолик
                 i = CheckWinDraw(board, i);
             }
         }
+
+        public  int CheckWinDraw(Board board, int i)
         {
             //rows and columns
             for (int x = 0; x < 3; x++)
