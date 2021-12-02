@@ -13,7 +13,7 @@ namespace Ебаный_крестикнолик
 
         static public void PlayersInput(Board board, int _roundCount)
         {
-            Console.WriteLine("Input ur cell");
+            Console.WriteLine($"Input ur cell, player {PlayerSelection(_roundCount)}");
             ConsoleKey key = Console.ReadKey().Key;
             Console.WriteLine(); Console.WriteLine();
             switch (key)
