@@ -21,7 +21,6 @@ namespace Ебаный_крестикнолик
                 i = CheckWinDraw(board, i);
             }
         }
-    public int CheckWinDraw(Board board, int i)
         {
             //rows and columns
             for (int x = 0; x < 3; x++)
