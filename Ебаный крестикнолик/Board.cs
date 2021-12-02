@@ -7,19 +7,10 @@ using System.Threading.Tasks;
 namespace Ебаный_крестикнолик
 {
     class Board
-   
     {
-            public Cell[,] _cells { get; } = new Cell[3, 3] { { Cell._, Cell._, Cell._ }, { Cell._, Cell._, Cell._ }, { Cell._, Cell._, Cell._ } };
-
-
-
-
-
-
-
-       public void DrawBoard(Board board)
+        public Cell[,] _cells { get; } = new Cell[3, 3] { { Cell._, Cell._, Cell._ }, { Cell._, Cell._, Cell._ }, { Cell._, Cell._, Cell._ } };
+        public void DrawBoard(Board board)
         {
-
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -28,13 +19,7 @@ namespace Ебаный_крестикнолик
                 }
                 Console.WriteLine("");
                 Console.WriteLine("");
-            } 
-            
-            
+            }
         }
-
-
     }
-
-
 }

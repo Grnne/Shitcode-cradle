@@ -2,19 +2,13 @@
 
 namespace Ебаный_крестикнолик
 {
-    
     class Program
     {
-       
-        
         static void Main(string[] args)
         {
-
-            Board board = new Board();
-            Game.Run(board);
+            Game game = new Game();
+            game.Run();
         }
-        
     }
 }
-
 public enum Cell { _, X, O }
